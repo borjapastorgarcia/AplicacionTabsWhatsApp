@@ -21,9 +21,9 @@ public class AdaptadorContactos extends ArrayAdapter<Contacto> {
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater=LayoutInflater.from(getContext());
 
-        View item=inflater.inflate(R.layout.lista_chats, null);
+        View item=inflater.inflate(R.layout.lista_contactos, null);
 
-        TextView tvNombreContacto=(TextView)item.findViewById(R.id.tvNombreContacto);
+        TextView tvNombreContacto=(TextView)item.findViewById(R.id.tvTituloContacto);
         tvNombreContacto.setText(datosContacto[position].getNombreContacto());
 
         TextView tvUrlWEb=(TextView)item.findViewById(R.id.tvNivk);

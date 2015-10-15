@@ -22,9 +22,9 @@ public class AdaptadorLlamadas extends ArrayAdapter<Llamada> {
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater=LayoutInflater.from(getContext());
 
-        View item=inflater.inflate(R.layout.lista_chats, null);
+        View item=inflater.inflate(R.layout.lista_llamadas, null);
 
-        TextView tvNombreContacto=(TextView)item.findViewById(R.id.tvNombreContacto);
+        TextView tvNombreContacto=(TextView)item.findViewById(R.id.TvTituloLlamada);
         tvNombreContacto.setText(datosLlamada[position].getNombreContacto());
 
         TextView tvDetallesLlamada=(TextView)item.findViewById(R.id.TvDetallesLlamada);
