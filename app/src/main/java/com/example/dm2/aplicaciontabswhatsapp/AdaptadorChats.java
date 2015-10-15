@@ -13,9 +13,11 @@ import android.widget.TextView;
  */
 public class AdaptadorChats extends ArrayAdapter<Chat> {
     private Chat[]datosChats;
-    public AdaptadorChats(Context context, int resource) {
-        super(context, resource);
+    public AdaptadorChats(Context context, Chat[]datosChats) {
+        super(context, R.layout.activity_main, datosChats);
+        this.datosChats=datosChats;
     }
+
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {

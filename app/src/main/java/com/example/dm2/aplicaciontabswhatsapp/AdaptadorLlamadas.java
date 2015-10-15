@@ -13,9 +13,11 @@ import android.widget.TextView;
  */
 public class AdaptadorLlamadas extends ArrayAdapter<Llamada> {
     private Llamada[]datosLlamada;
-    public AdaptadorLlamadas(Context context, int resource) {
-        super(context, resource);
+    public AdaptadorLlamadas(Context context, Llamada[]datosLlamada) {
+        super(context, R.layout.activity_main, datosLlamada);
+        this.datosLlamada=datosLlamada;
     }
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater=LayoutInflater.from(getContext());

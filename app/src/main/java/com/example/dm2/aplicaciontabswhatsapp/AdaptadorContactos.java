@@ -13,8 +13,9 @@ import android.widget.TextView;
  */
 public class AdaptadorContactos extends ArrayAdapter<Contacto> {
     private Contacto[]datosContacto;
-    public AdaptadorContactos(Context context, int resource) {
-        super(context, resource);
+    public AdaptadorContactos(Context context, Contacto[]datosContacto) {
+        super(context, R.layout.activity_main,datosContacto    );//R.layout.activity_main,datosWeb
+        this.datosContacto=datosContacto;
     }
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -22,7 +23,7 @@ public class AdaptadorContactos extends ArrayAdapter<Contacto> {
 
         View item=inflater.inflate(R.layout.lista_chats, null);
 
-        TextView tvNombreContacto=(TextView)item.findViewById(R.id.TvNombreContacto);
+        TextView tvNombreContacto=(TextView)item.findViewById(R.id.tvNombreContacto);
         tvNombreContacto.setText(datosContacto[position].getNombreContacto());
 
         TextView tvUrlWEb=(TextView)item.findViewById(R.id.tvNivk);
