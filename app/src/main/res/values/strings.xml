@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AplicacionTabsWhatsApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="tab1title">Llamadas</string>
+    <string name="tab2title">Chats</string>
+    <string name="tab3title">Contactos</string>
+</resources>
