@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AplicacionTabsWhatsApp</string>
+    <string name="app_name">WhatsApp</string>
     <string name="action_settings">Settings</string>
     <string name="tab1title">Llamadas</string>
     <string name="tab2title">Chats</string>

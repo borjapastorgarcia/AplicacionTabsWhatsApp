@@ -23,7 +23,7 @@ public class AdaptadorChats extends ArrayAdapter<Chat> {
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater=LayoutInflater.from(getContext());
 
-        View item=inflater.inflate(R.layout.lista_chats, null);jj
+        View item=inflater.inflate(R.layout.lista_chats, null);
 
         TextView tvNombreContacto=(TextView)item.findViewById(R.id.tvNombreContacto);
         tvNombreContacto.setText(datosChats[position].getNombreContacto());
